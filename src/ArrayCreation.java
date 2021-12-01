@@ -1,13 +1,25 @@
 public class ArrayCreation {
 
     public static double getAverage(double[] numbers) {
-
-       return 0.0; // Make sure to update this line. It is a temporary placeholder to avoid an error.
+        if (numbers.length < 3) {
+            return 0.0;
+        }
+        int total = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            total += numbers[i];
+        }
+       return total / numbers.length; // Make sure to update this line. It is a temporary placeholder to avoid an error.
     }
 
     public static String stringArray(String[] friends) {
-
-        return ""; // Make sure to update this line. It is a temporary placeholder to avoid an error.
+        if (friends.length != 5) {
+            return "";
+        }
+        String combined = "";
+        for (int i = 0; i < friends.length; i++) {
+            combined += friends[i].length() + " ";
+        }
+        return combined.trim(); // Make sure to update this line. It is a temporary placeholder to avoid an error.
     }
 
     public static String countryData() {
