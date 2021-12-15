@@ -32,7 +32,8 @@ public class ArrayCreation {
         String[] languages = {"Mandarin", "Arabic", "French", "Korean", "German", "Hindi", "Japanese", "Akuapem Twi",
         "Swahili", "Spanish", "English", "French", "English"};
 
+        int index = (int)(Math.random() * countries.length);
 
-        return "";
+        return "The capital of " + countries[index] + " is " + capitals[index] + " and the primary language is " + languages[index];
     }
 }
